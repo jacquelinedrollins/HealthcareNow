@@ -1,0 +1,8 @@
+!coverage.py: This is a private format, don't read it directly!{"lines":{}}
+
+To test coverage
+* Mac OS
+HealthcareNow\src\Tests> pytest --cov=HealthcareNow
+* Windows OS
+
+HealthcareNow\src\Tests> pytest --cov=HealthcareNow

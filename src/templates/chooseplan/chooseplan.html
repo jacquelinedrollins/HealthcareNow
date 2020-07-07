@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">Health Care Now</h1>
+          <p class="lead">Choosing the right plan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> Choose Plan</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="Choose Plan" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="display-4">Choose your healthcare plan!</h1>
+          <img src="http://genchi.info/image/medical-doctor-wallpaper-24.jpg" alt="">
+        </div>
+    </section>
+
+
+    <div class="container">
+
+      {% block body %}
+            <div class="container" >
+              <form method="post">
+                {% csrf_token %}
+                {{form}}
+          <button type="submit">Submit</button>
+
+
+      </div>
+
+
+      {% endblock %}
+    </div>
+
+
+  <!-- Work -->
+  <section id="work" class="bg-dark text-white text-center">
+    <h2 class="display-4">We Work For You</h2>
+    <hr>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Our Team</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="assets/img/realtors/kyle.jpg" alt="" class="rounded-circle mb-3">
+          <h4>Jacqueline Rollins</h4>
+          <p class="text-success">
+            <i class="fas fa-award text-success mb-3"></i> Messaiah</p>
+          <hr>
+
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/realtors/mark.jpg" alt="" class="rounded-circle mb-3">
+          <h4>Ian Crueldad</h4>
+          <p class="text-success">God's Choosen Warrior</p>
+          <hr>
+
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/realtors/jenny.jpg" alt="" class="rounded-circle mb-3">
+          <h4>Dino</h4>
+          <p class="text-success">Sniffer</p>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </section>
+  >
+
+{% endblock  %}
